@@ -8,8 +8,8 @@ let resultEl = document.getElementById("resultE")
 
 
 function tempConventer() {
-    let form = document.getElementsByName("converter")
-    form.forEach(radio => {
+    let formEl = document.getElementsByName("converter")
+    formEl.forEach(radio => {
     if (radio.checked){checkedR = (radio.value);}
 })
     textContainerEl.style.display = "none";
