@@ -21,7 +21,7 @@ function enterNum(){
 
     const celTofahrenheit = (cel) => cel * 1.8 + 32;
     const fahTocelcius = (fah) => (fah - 32) * 5 / 9;
-    const celToKelvin = (cel) => (cel + 273) ;
+    const celToKelvin = (cel) => Number(cel + 273.15) ;
     const fahTokelvin = (fah) => (5 * (fah - 32) / 9) + 273;
 
     let numIn = numEl.value;
@@ -30,10 +30,10 @@ function enterNum(){
         resultEl.innerHTML = numIn + " Celcius = " + celTofahrenheit(numIn).toFixed(2) + "  Fahrenheit";
         }
     else if (checkedR == "fahtocel"){
-        resultEl.innerHTML =  numIn + " Fahrenheit = " + fahTocelcius(numIn).toFixed(2) + "  Celcius";
+        resultEl.innerHTML =  numIn + " Fahrenheit = " + fahTocelcius(numIn).toFixed(2)  + "  Celcius";
             }
-    else if (checkedR == "celtokel"){
-        resultEl.innerHTML = numIn + " Celcius = " + celToKelvin(numIn) + "  Kelvin";
+    else if (checkedR === "celtokel"){
+        resultEl.innerHTML = numIn + " Celcius = " + celToKelvin(numIn).toFixed(2) + "  Kelvin";
             }
     else if (checkedR == "fahtokel"){
         resultEl.innerHTML = numIn + " Fahrenheit = " + fahTokelvin(numIn).toFixed(2) + "  Kelvin";
