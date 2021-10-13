@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:monospace;
+}
+
+.container{
+    background-image: url("image.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.choose_page{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(180, 223, 223,0.5);
+}
+h3{
+    margin: 2rem;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+form label{
+    font-size: 1.5rem;
+}
+form input{
+    margin: 1rem;  
+}
+#subEl{
+    padding: 1rem;
+    margin-bottom: 10px;
+    background-color: rgba(236, 231, 169,0.5);
+    color:blueviolet;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    border-radius: 0px 0px 30px 30px;
+}
