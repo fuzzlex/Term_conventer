@@ -16,12 +16,36 @@
 .choose_page{
     display: flex;
     flex-direction: column;
+    width: 50rem;
+    height: 30rem;
     background-color: rgba(180, 223, 223,0.5);
+}
+#openedNew{
+    display: none;
+    text-align: center;
+}
+.div{
+    text-align: center;
+}
+#openedNew label{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+#openedNew input{
+    height: 4rem;
+    width: 6rem;
+    background-color: cornflowerblue;
+    font-size: 2rem;
+    margin: 2rem;
 }
 h3{
     margin: 2rem;
     text-transform: capitalize;
     font-size: 1.6rem;
+
+}
+h1{
+    text-align: center;
 }
 form{
     display: flex;
@@ -34,9 +58,9 @@ form label{
 form input{
     margin: 1rem;  
 }
-#subEl{
+button{
     padding: 1rem;
-    margin-bottom: 10px;
+    margin: 10px;
     background-color: rgba(236, 231, 169,0.5);
     color:blueviolet;
     font-size: 1.5rem;

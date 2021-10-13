@@ -10,16 +10,33 @@
 <body>
     <div class="container">
         <div class="choose_page">
-            <h3>please select the unit you want to convert</h3>
-            <form action="#" name="convertSel">
+            <div id="openedNew">
+               <div class="div">
+                     <h3>please enter the degree : </h3>
+                     <input id="num" type="number" name="converNum">
+               </div>
+               <div class="result">
+                    <h1 id="resultE"></h1>
+                </div>
+               <div class="buttons">
+                    <button onclick="enterNum()">SUBMIT</button>
+                    <a href="index.html"><button>HOME</button></a>
+               </div>
+            </div>
 
-                <label for="celfah"> <input type="radio" id="celfah" name="converter" value="celtofah">Celcius-Fahrenheit</label><br>
-                <label for="fahcel"> <input type="radio" id="fahcel" name="converter" value="fahtocel">Fahrenheit-Celcius</label><br>
-                <label for="celkel"> <input type="radio" id="celkel" name="converter" value="celtokel">Celcius-Kelvin</label><br>
-                <label for="fahkel"> <input type="radio" id="fahkel" name="converter" value="fahtokel">Fahrenheit-Kelvin</label><br>
-                <button id="subEl" type="submit" onclick="tempConventer()">SUBMIT</button>
+            <div id="textContainer">
+                <h3>please select the unit you want to convert</h3>
+                 <form action="#" name="convertSel">
+
+                    <label for="celfah"> <input type="radio" id="celfah" name="converter" value="celtofah">Celcius-Fahrenheit</label><br>
+                    <label for="fahcel"> <input type="radio" id="fahcel" name="converter" value="fahtocel">Fahrenheit-Celcius</label><br>
+                    <label for="celkel"> <input type="radio" id="celkel" name="converter" value="celtokel">Celcius-Kelvin</label><br>
+                    <label for="fahkel"> <input type="radio" id="fahkel" name="converter" value="fahtokel">Fahrenheit-Kelvin</label><br>
+                    <button id="subEl" type="submit" onclick="tempConventer()">SUBMIT</button>
                     
-            </form>
+                    
+                </form>
+            </div>
         </div>
     </div>
 
