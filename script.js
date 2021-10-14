@@ -21,7 +21,7 @@ function enterNum(){
 
     const celTofahrenheit = (cel) => cel * 1.8 + 32;
     const fahTocelcius = (fah) => (fah - 32) * 5 / 9;
-    const celToKelvin = (cel) => Number(cel + 273.15) ;
+    const celToKelvin = (cel) => Number(cel) + 273.15 ;
     const fahTokelvin = (fah) => (5 * (fah - 32) / 9) + 273;
 
     let numIn = numEl.value;
